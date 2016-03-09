@@ -1,0 +1,9 @@
+mixin gallery(data)
+
+	-data = data || []
+
+	+b('section').gallery
+		each item in data
+			+e.item
+				+e.image(src=item.image alt='ФК ЮНИОР')
+				+e.caption= item.caption

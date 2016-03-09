@@ -1,5 +1,7 @@
 extends /blocks/layout-default/layout-default
 include /blocks/banner/banner
+include /blocks/contacts/contacts
+include /blocks/gallery/gallery
 
 block head
 	- var pageTitle = 'ФК ДФШ ЮНИОР';
@@ -8,6 +10,11 @@ block head
 block content
 
 	- banner = getData('banner');
+	- gallery = getData('gallery');
+	- contacts = getData('contacts');
 
 	main.main
 		+banner(banner)
+		+gallery(gallery)
+		+contacts(contacts)
+
