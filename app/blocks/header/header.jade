@@ -1,0 +1,19 @@
+include ../menu/menu
+
+mixin header
+
+	+b('header').header
+		+e.item
+			+e.logo(src='assets/images/logo.png' alt="ДФШ Юниор")
+			+e.info
+				+e.title ДФШ Юниор
+				+e.description
+					| Детская команда по футболу
+					br
+					| Курской области
+		+e.item._align_right
+			+e.tel(href="tel:8-800-700-60-50") 8-800-700-60-50
+			+e.email(href="mailto:asda@mail.cc") почта@gmail.com
+			+e.socials
+		+e.item._size_full
+			+menu(['Главная', 'Наш клуб', 'Галерея', 'Новости', 'Матчи'])

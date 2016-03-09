@@ -1,0 +1,7 @@
+mixin menu(data)
+	- data = data || []
+
+	+b('nav').menu
+		each item in data
+			+e.item(href=jv0)= item
+

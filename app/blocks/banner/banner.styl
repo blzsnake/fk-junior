@@ -1,0 +1,64 @@
+.banner
+	margin 0
+	position relative
+
+	&__container
+		height 45vw
+		max-height 450px
+		overflow hidden
+
+	&__item
+		position relative
+		height 45vw
+		max-height 450px
+
+	&__img
+		position absolute
+		top 0
+		bottom 0
+		right 0
+		left 0
+		background-size cover
+		background-position 50% 37%
+
+	&__title
+		position absolute
+		right 10%
+		bottom 30%
+		padding-right $(35px)
+		padding-left $(35px)
+		display inline-block
+		font-size $(18px)
+		line-height $(40px)
+		background-color $granate
+
+	&__description
+		position absolute
+		right 10%
+		bottom 20%
+		padding $(8px) $(25px)
+		display inline-block
+		font-size $(14px)
+		background-color $blue
+
+	&__hidden
+		display none
+
+	&__arrow
+		position absolute
+		z-index 100
+		top 50%
+		size $(30px)
+		border-right $(5px) solid #fff
+		border-bottom $(5px) solid #fff
+		transform translateY(-50%)
+		cursor pointer
+
+		&_side_right
+			right 5%
+			transform rotate(-45deg)
+
+		&_side_left
+			left 5%
+			transform rotate(135deg)
+

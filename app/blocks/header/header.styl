@@ -1,0 +1,64 @@
+.header
+	padding-top $(15px)
+	padding-bottom $(5px)
+	font-size 0
+
+	&__item
+		width 50%
+		font-size 1rem
+		vertical-align top
+
+		+below(760px)
+			vertical-align middle
+
+		&_align_right
+			text-align right
+
+		&_size_full
+			width 100%
+			display block
+
+	&__item
+	&__logo
+	&__info
+		display inline-block
+
+		+below(760px)
+			vertical-align middle
+
+	&__info
+		margin-left $(22px)
+
+	&__logo
+		width $(105px)
+		vertical-align top
+
+		+below(760px)
+			max-width 4rem
+			vertical-align inherit
+
+	&__tel
+	&__title
+		line-height 1.5
+		font-size $(30px)
+		text-decoration none
+		color #fff
+
+		+below(760px)
+			font-size $(24px)
+
+	&__description
+		font-size $(18px)
+		line-height 1.2
+
+		+below(760px)
+			display none
+
+	&__email
+		display block
+		font-size $(20px)
+		text-decoration none
+		color #fff
+
+		+below(760px)
+			display none

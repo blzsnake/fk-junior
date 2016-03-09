@@ -1,0 +1,36 @@
+.menu
+	margin-top 15px
+	position relative
+	font-size 0
+	border-top 1px solid
+	border-bottom 1px solid
+	border-color #7f8da5
+	background-color $blue
+
+	&__item
+		position relative
+		display inline-block
+		width $(151px)
+		text-align center
+		line-height $(40px)
+		font-size $(16px)
+		text-decoration none
+		color #fff
+		transition background-color .4s ease
+
+		&:hover
+			background-color $granate
+			text-shadow 0 0 5px
+
+			&:after
+				display none
+
+		&::after
+			position absolute
+			right -1px
+			top 4px
+			height 85%
+			width 1px
+			border-radius 4px
+			background linear-gradient(to top, transparent, #fff, transparent)
+			content ''

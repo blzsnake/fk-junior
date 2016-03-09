@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/banner/banner
+
+block head
+	- var pageTitle = 'ФК ДФШ ЮНИОР';
+
+
+block content
+
+	- banner = getData('banner');
+
+	main.main
+		+banner(banner)

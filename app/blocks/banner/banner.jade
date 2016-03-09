@@ -1,0 +1,15 @@
+mixin banner(data)
+
+	-data = data || []
+
+	+b('section').banner
+		+e.arrow._side_left.js-arrow
+		+e.arrow._side_right.js-arrow
+		+e.container#bannerSlider
+			+e.wrapper.swiper-wrapper
+				each item in data
+					+e.item.swiper-slide
+						+e.hidden(src=item.src alt='ФК ЮНИОР')
+						+e.img(style='background-image:url('+item.src+')')
+						+e.title= item.title
+						+e.description= item.desc
