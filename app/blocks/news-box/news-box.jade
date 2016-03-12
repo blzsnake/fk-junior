@@ -1,0 +1,11 @@
+include ../news/news
+
+mixin news-box()
+
+	+b.news-box
+		+e.title Новости
+		+e.list
+			each val in [1,2,3,4]
+				+news=val
+		+e.more
+			i(class='fa fa-chevron-down')
